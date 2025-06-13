@@ -52,4 +52,4 @@ jobs:
     - name: Build and analyze
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=simple-java-ci-project    
+      run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=hamidkhaeruman -Dsonar.projectKey=HamidKhaeruman_MKEPL_CICD_KELOMPOK1_S1SE0602   
