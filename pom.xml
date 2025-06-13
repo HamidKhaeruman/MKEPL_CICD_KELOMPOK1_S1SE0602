@@ -9,9 +9,11 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-  </properties>
+      <maven.compiler.source>17</maven.compiler.source>
+      <maven.compiler.target>17</maven.compiler.target>
+      <sonar.organization>HamidKhaeruman</sonar.organization>
+      <sonar.host.url>http://localhost:9000/</sonar.host.url> 
+   </properties>
 
   <dependencies>
     <!-- JUnit untuk pengujian unit -->
@@ -53,10 +55,4 @@
          <url>https://maven.pkg.github.com/HamidKhaeruman/MKEPL_CICD_KELOMPOK1_S1SE0602</url>
       </repository>
    </distributionManagement>
-   <properties>
-      <maven.compiler.source>1.8</maven.compiler.source>
-      <maven.compiler.target>1.8</maven.compiler.target>
-      <sonar.organization>HamidKhaeruman</sonar.organization>
-      <sonar.host.url>http://localhost:9000/</sonar.host.url> 
-   </properties>
 </project>
