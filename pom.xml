@@ -4,7 +4,7 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.example</groupId>
+  <groupId>com.github.HamidKhaeruman</groupId>
   <artifactId>SimpleJavaCIProject</artifactId>
   <version>1.0-SNAPSHOT</version>
 
@@ -13,10 +13,9 @@
       <maven.compiler.target>17</maven.compiler.target>
       <sonar.organization>HamidKhaeruman</sonar.organization>
       <sonar.host.url>http://localhost:9000/</sonar.host.url> 
-   </properties>
+  </properties>
 
   <dependencies>
-    <!-- JUnit untuk pengujian unit -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -27,7 +26,6 @@
 
   <build>
     <plugins>
-      <!-- Plugin untuk analisis statik kode (checkstyle) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -44,6 +42,12 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.1.1</version>
       </plugin>
     </plugins>
   </build>
