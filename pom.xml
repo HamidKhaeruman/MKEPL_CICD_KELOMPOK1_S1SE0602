@@ -11,9 +11,9 @@
   <properties>
       <maven.compiler.source>17</maven.compiler.source>
       <maven.compiler.target>17</maven.compiler.target>
-      <sonar.organization>HamidKhaeruman</sonar.organization>
-      <sonar.host.url>http://localhost:9000/</sonar.host.url> 
-   </properties>
+      <sonar.organization>simple-java-ci-project</sonar.organization>
+      <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
 
   <dependencies>
     <!-- JUnit untuk pengujian unit -->
