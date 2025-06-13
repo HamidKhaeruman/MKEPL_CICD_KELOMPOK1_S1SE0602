@@ -4,16 +4,16 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.HamidKhaeruman</groupId>
-  <artifactId>simple-java-ci-project</artifactId>
-  <version>1.0.0</version>
+  <groupId>com.example</groupId>
+  <artifactId>SimpleJavaCIProject</artifactId>
+  <version>1.0-SNAPSHOT</version>
 
   <properties>
-      <maven.compiler.source>11</maven.compiler.source>
-      <maven.compiler.target>11</maven.compiler.target>
-      <sonar.organization>simple-java-ci-project</sonar.organization>
-      <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-  </properties>
+      <maven.compiler.source>17</maven.compiler.source>
+      <maven.compiler.target>17</maven.compiler.target>
+      <sonar.organization>HamidKhaeruman</sonar.organization>
+      <sonar.host.url>http://localhost:9000/</sonar.host.url> 
+   </properties>
 
   <dependencies>
     <!-- JUnit untuk pengujian unit -->
@@ -31,12 +31,9 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.1.2</version>
+        <version>3.3.0</version>
         <configuration>
-          <source>11</source>
-          <target>11</target>
           <configLocation>google_checks.xml</configLocation>
-          <configLocation>checkstyle.xml</configLocation>
           <failOnViolation>true</failOnViolation>
         </configuration>
         <executions>
@@ -54,7 +51,7 @@
   <distributionManagement>
       <repository>
          <id>github</id>
-         <name>Github Packages MKEPL CI CD Kelompok 1 S1SE-06-02</name>
+         <name>MKEPL CI CD Kelompok 1 S1SE-06-02</name>
          <url>https://maven.pkg.github.com/HamidKhaeruman/MKEPL_CICD_KELOMPOK1_S1SE0602</url>
       </repository>
    </distributionManagement>
